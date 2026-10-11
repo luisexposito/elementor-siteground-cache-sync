@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="Elementor SiteGround Cache Sync">
+	<file>.</file>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<config name="testVersion" value="7.4-"/>
+	<rule ref="WordPress-Core">
+		<!-- Single-file MU-plugin: the file is named after the plugin, not the class. -->
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+	</rule>
+</ruleset>
